@@ -14,7 +14,7 @@
     transition-all duration-300;
   }
   .sidebar-element{
-    @apply hover:bg-white rounded w-[40%] flex justify-center duration-150 ease-linear transition-all;
+    @apply  hover:underline flex justify-center duration-150 ease-linear transition-all;
   }
   .coverImg{
     background-image: url('./img/main.jpg');
@@ -49,7 +49,8 @@
     object-fit: cover;
   }
   .company{
-    height: 110px;
+    
+    object-fit: cover;
     display: inline-block;
    
   }

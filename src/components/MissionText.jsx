@@ -1,17 +1,28 @@
-import React from 'react'
+import Marketing from '../img/marketing.png'
+import Mission from '../img/mission.png'
 
 const MissionText = () => {
   return (
     <div>
     <div className='flex min-h-[600px] justify-evenly items-center flex-col py-24 gap-5'>
         <div className='flex justify-center flex-col items-start sm:w-[50%] w-[75%]'>
+          <div className='flex gap-10'>
+            <img src={Marketing} className='h-14 hidden sm:block' />
+            <div>
             <h2 className='text-lg font-bold'>Welcome to Marketing Agency</h2>
             <p>At Marketing Agency, we are passionate about crafting compelling content that resonates with audiences across diverse platforms. Founded on the belief that effective marketing should inspire,
                 educate, and engage, we specialize in delivering impactful solutions tailored to meet the unique needs of each client.</p>
+            </div>
+          </div>
          </div>
          <div className='flex justify-center flex-col items-start sm:w-[50%] w-[75%]'>
-            <h2 className='text-lg font-bold'>Our Mission</h2>
-            <p>Our mission at Marketing Agency is to empower businesses and brands to thrive in a dynamic digital landscape. We combine creativity with strategic insights to create campaigns that not only drive results but also leave a lasting impression.</p>
+          <div className='flex gap-10'>
+            <img src={Mission} className='h-14 hidden sm:block' />
+            <div>
+              <h2 className='text-lg font-bold'>Our Mission</h2>
+              <p>Our mission at Marketing Agency is to empower businesses and brands to thrive in a dynamic digital landscape. We combine creativity with strategic insights to create campaigns that not only drive results but also leave a lasting impression.</p>
+            </div>
+         </div>
          </div>
     </div>
     <div className='flex min-h-[100px] py-12 p-6 sm:p-3 flex-col sm:flex-row gap-5 sm:gap-2 bg-gray-600 text-white justify-around items-center'>
