@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  *{
+    @apply font-poppins;
+  }
+}
+
+@layer components{
+  .menu-span{
+    @apply block sm:hidden bg-accent bg-opacity-80 rounded hover:rounded-3xl p-1 ease-linear transition
+    transition-all duration-300;
+  }
+  .sidebar-element{
+    @apply hover:bg-white rounded w-[40%] flex justify-center duration-150 ease-linear transition-all;
+  }
+  .coverImg{
+    background-image: url('./img/main.jpg');
+    @apply bg-cover min-h-[600px] bg-center ;
+    padding-top: 50px;
+  }
+  .nav-element{
+    @apply px-2 py-1;
+  }
+  .nav-element:hover{
+    @apply bg-black text-white ;
+  }
+  .active{
+    @apply bg-black text-white;
+  }
+  .btn{
+    @apply py-3 px-4 bg-white;
+  }
+ 
+  .fact{
+    padding: 1.4rem;
+    background-color: black;
+    min-height: 100px
+  }
+  .card{
+    @apply bg-gray-400 rounded shadow-2xl;
+    min-height: 500px;
+  }
+  .employee-image{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .company{
+    height: 110px;
+    display: inline-block;
+   
+  }
+  .testimonial-image{
+    @apply h-24 w-24 rounded-full shadow-md;
+    object-fit: cover;
+  }
+}
+
+@layer utilities{
+  .padding-cover{
+    padding: clamp(50px,5vw,100px);
+  }
+  .card-padding{
+    padding: clamp(50px,5vw,100px) clamp(10px,3vw,100px);
+  }
+
+  
+}
