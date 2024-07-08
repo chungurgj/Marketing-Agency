@@ -57,6 +57,12 @@
     @apply h-24 w-24 rounded-full shadow-md;
     object-fit: cover;
   }
+
+  .servicesCover{
+    background-image: url('./img/servicesImg.jpg');
+    background-position: center ;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 @layer utilities{

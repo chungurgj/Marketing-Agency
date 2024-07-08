@@ -11,7 +11,7 @@ const Navbar = () => {
         console.log(openSideMenu)
     },[openSideMenu])
   return (
-    <div className='fixed top-0'>
+    <div className='fixed top-0 z-50'>
         <div className={`fixed top-0 left-0 h-screen bg-secondary sm:hidden w-[65%] transform transition-all ease-in-out duration-300
         ${openSideMenu ? 'translate-x-0' : '-translate-x-full'}`}>
             <div className='flex flex-col justify-between h-[50%] '>

@@ -81,10 +81,10 @@ const Testimonials = () => {
 
   return (
     <div className='relative flex min-h-[550px] overflow-hidden py-10 lg:p-10'>
-      <div className='absolute inset-y-0 left-0 flex items-center'>
+      <div className='absolute inset-y-0  flex items-center'>
         <img onClick={handlePrev} src={LT} className='cursor-pointer h-10 w-10' alt="Previous"  />
       </div>
-      <div className='absolute inset-y-0 right-0 flex items-center'>
+      <div className='absolute inset-y-0 right-10 flex items-center'>
         <img onClick={handleNext} src={LT} className='cursor-pointer rotate-180 h-10 w-10' alt="Next" />
       </div>
       <div className='flex justify-center items-center w-full overflow-hidden'>

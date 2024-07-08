@@ -1,10 +1,12 @@
-import React from 'react'
+import ServicesJumbo from '../components/ServicesJumbo'
+import ServicesHeadline from '../components/ServicesHeadline'
 
 const Services = () => {
   return (
-    <div>
-      Services
-    </div>
+    <>
+      <ServicesHeadline/>
+      <ServicesJumbo/>
+    </>
   )
 }
 
