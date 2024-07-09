@@ -64,6 +64,27 @@
     background-position: center ;
     background-color: rgba(0, 0, 0, 0.1);
   }
+  .login-background {
+    @apply bg-gradient-to-r hover:from-indigo-300 hover:via-emerald-300 hover:to-rose-200 from-emerald-300 via-blue-300 
+     to-rose-300 h-screen transition-all duration-500 ease-linear;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    position: fixed; /* Fixed position to cover the entire screen */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+  }
+  .signup-background {
+    @apply bg-gradient-to-r hover:from-rose-300 hover:via-amber-300 hover:to-sky-300 from-fuchsia-300 via-teal-300 
+     to-lime-300 h-screen transition-all duration-500 ease-linear;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    position: fixed; /* Fixed position to cover the entire screen */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+  }
+  .auth-container{
+    width: clamp(300px,35vw,450px);
+  }
 }
 
 @layer utilities{

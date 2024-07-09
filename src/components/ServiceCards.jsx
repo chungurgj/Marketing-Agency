@@ -21,12 +21,12 @@ const ServiceCards = () => {
 export default ServiceCards
 
 const Card = ({title,price,height,textColor,des,features}) =>(
-    <article className={`card w-[90%] md:w-[70%] lg:w-[30%] min-h-[500px] ${height}`}>
-        <div className='bg-gray-900 text-white p-3 flex justify-between'>
+    <article className={`hover:-translate-y-6 duration-200  transition-all ease-linear rounded-xl  card flex flex-col  w-[90%] md:w-[70%] lg:w-[30%] min-h-[500px] ${height}`}>
+        <div className='bg-gray-900 text-white  p-3 flex justify-around rounded-t-xl'>
             <h2>{title}</h2>
             <p className={`${textColor}`}>{price}$/month</p>
         </div>
-        <div className='bg-gray-300 p-3 px-5'>
+        <div className='bg-gray-300  p-5'>
             {des}
         </div>
         <div className='grid gap-1 grid-cols-2 m-5'>
@@ -38,6 +38,8 @@ const Card = ({title,price,height,textColor,des,features}) =>(
             } text-sm sm:text-md p-3 ${elongate ? 'col-span-2' : ''}`} key={index}>{feature}</p>
         )
         })}
+        
         </div>
+        <button className='btn bg-gray-600 mt-auto hover:bg-accent transition-all duration-300  ease-linear text-white rounded-b-xl'>See full</button>
       </article>
 )

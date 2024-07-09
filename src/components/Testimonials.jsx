@@ -79,6 +79,8 @@ const Testimonials = () => {
     ]);
   };
 
+  const bgColors = ['bg-rose-200','bg-rose-300']
+
   return (
     <div className='relative flex min-h-[550px] overflow-hidden py-10 lg:p-10'>
       <div className='absolute inset-y-0  flex items-center'>
@@ -96,6 +98,7 @@ const Testimonials = () => {
               des={testimonial.des}
               image={testimonial.image}
               isActive={index < visibleCount} // Show only up to `visibleCount` testimonials
+              bgColor={bgColors[index%bgColors.length]}
             />
           ))}
         </div>
@@ -106,8 +109,8 @@ const Testimonials = () => {
 
 export default Testimonials;
 
-const Testimonial = ({ image, name, des, isActive }) => (
-  <article className={`flex flex-col gap-3 justify-center items-center p-4 sm:p-6 min-h-[400px] rounded bg-green-200 mx-4 transition-opacity duration-300 ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-95 hidden'}`}>
+const Testimonial = ({ image, name, des, isActive, bgColor}) => (
+  <article className={`flex flex-col gap-3 justify-center shadow-xl items-center p-4 sm:p-6 min-h-[400px] rounded-2xl ${bgColor} mx-4 transition-opacity duration-300 ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-95 hidden'}`}>
     <div className={`transition-opacity duration-300  ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       <img src={image} alt={name} className='testimonial-image' />
     </div>
