@@ -8,7 +8,7 @@ const SignUp = () => {
 
   return (
     <div className="signup-background flex justify-center items-center">
-      <div className='min-h-[450px] auth-container lg:py-10 bg-white shadow-lg rounded-xl flex flex-col justify-evenly items-center'>
+      <div className='min-h-[450px] auth-container py-7 lg:py-10 bg-white shadow-lg rounded-xl flex flex-col justify-evenly items-center'>
         <h2 className='text-xl font-semibold'>Sign up</h2>
         <form className='flex flex-col gap-4  p-5'>
             <div className='flex flex-col'>
