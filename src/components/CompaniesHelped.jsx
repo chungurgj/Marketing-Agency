@@ -10,8 +10,8 @@ const CompaniesHelped = () => {
   return (
     
      
-    <div className='grid grid-cols-6 gap-5 p-2 sm:p-6 bg-slate-200  min-h-[200px] justify-evenly items-center'>
-      <Company image={c1} reduce></Company>
+    <div className='grid grid-cols-6 gap-5 py-5 px-2 sm:p-6 bg-slate-200  min-h-[200px] justify-evenly items-center'>
+      <Company image={c1} ></Company>
       <Company image={c2}></Company>
       <Company image={c3}></Company>
       <Company image={c4}></Company>
@@ -25,8 +25,8 @@ const CompaniesHelped = () => {
 
 export default CompaniesHelped
 
-const Company = ({image,reduce}) =>(
+const Company = ({image}) =>(
     <div className='flex justify-center items-center col-span-3 sm:col-span-2 lg:col-span-1'>
-        <img src={image} className={`company ${reduce ? 'sm:h-[80px]' : ''}`} />
+        <img src={image} className={`company h-[50px] sm:h-[70px]`} />
     </div>
 )
