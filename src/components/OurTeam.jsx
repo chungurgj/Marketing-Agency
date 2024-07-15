@@ -59,7 +59,7 @@ export default OurTeam
 const Employee = ({fullName, role, description, image,color}) =>{
 
     return (<article className={`flex sm:flex-col gap-5 md:gap-0 md:flex-row justify-around p-2 items-center min-h-[300px] ${color} sm:col-span-3 lg:col-span-2 rounded`}>
-        <div className='flex flex-col justify-center items-center sm:gap-3'>
+        <div className='flex flex-row md:flex-col justify-center items-center sm:gap-3'>
          <img src={image}  className='employee-image'/>
          <div>
             <h3>{fullName}</h3>
