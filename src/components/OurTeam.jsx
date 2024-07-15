@@ -7,7 +7,7 @@ import Sarah from '../img/Sarah.jpg'
 
 const OurTeam = () => {
   return (
-    <div className='grid sm:grid-cols-6 min-h-[650px] bg-gray-50 gap-10 m-4 px-2 sm:px-14 py-20'>
+    <div className='grid sm:grid-cols-6 min-h-[650px] bg-gray-50 gap-10 m-4 md:px-2 sm:px-14 py-20'>
       <Employee 
     fullName={'Gjorgji Chungurski'} 
     image={Gjorgji}

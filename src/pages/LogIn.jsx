@@ -8,7 +8,7 @@ const LogIn = () => {
 
   return (
     <div className="login-background flex justify-center items-center">
-      <div className='min-h-[620px] auth-container lg:py-10 bg-white shadow-lg rounded-xl flex flex-col justify-evenly items-center'>
+      <div className='min-h-[450px] auth-container lg:py-10 bg-white shadow-lg rounded-xl flex flex-col justify-evenly items-center'>
         <h2 className='text-xl font-semibold'>Login</h2>
         <form className='flex flex-col gap-5  p-5'>
             <div className='flex flex-col'>
@@ -35,7 +35,7 @@ const LogIn = () => {
             </div>
             </div>
         </div>
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center mt-7'>
         <h5>Marketing Agency</h5>
         <small className='underline cursor-pointer' onClick={()=>navigate('/signup')}>Sign up</small>
         </div>
